@@ -1,0 +1,84 @@
+@import url(nav.css);
+@import url(main.css);
+
+@import url(swiper-bundle.min.css);
+
+:root {
+    --primary: #FF0000;
+    --black: #030303;
+    --dark1: #181818;
+    --dark2: #212121;
+    --dark3: #424242;
+    --dark4: #747474;
+    --dark5: #909090;
+    --dark6: #E5E5E5;
+    --dark7: #F4F4F4;
+    --dark8: #F9F9F9;
+    --white: #FFFFFF;
+
+    --toggle-switch: var(--dark3);
+    --sidebar-color: var(--dark2);
+    --header-color: var(--dark2);
+
+
+    --main-color: var(--dark1);
+
+    --title-72bold: 700 4.5rem/normal Roboto; 
+    --title-32bold: 700 2rem/2.25rem Roboto; 
+    --subtitle-22bold: 700 1.375rem/1.625rem Roboto; 
+    --subtitle-22medium: 500 1.375rem/1.625rem Roboto; 
+    --body-16bold: 700 1rem/1.25rem Roboto; 
+    --body-16medium: 500 1rem/1.25rem Roboto; 
+    --body-16regular: 400 1rem/1.25rem Roboto; 
+    --body-16regular_u: 400 1rem/1.125rem Roboto; 
+    --caption-12bold: 700 0.75rem/1rem Roboto;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* display: flex; */
+    justify-content: space-between;
+    height: 100vh;
+    background-color: var(--dark1);
+}
+
+body.light {
+
+    --main-color: var(--white);
+}
+
+/* TODO: HACER EL LIGHT MODE */
+
+body.light {
+    background-color: var(--dark6);
+}
+
+.body-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 57.5px;
+    left: 0;
+    opacity: 100;
+    background-color: #03030375;
+    z-index: 100;
+    transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+}
+
+.sidebar.close .body-container {
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .body-container {
+        display: none;
+    }
+}

@@ -1,0 +1,88 @@
+.tablist {
+    background-color: var(--dark2);
+    height: 54px;
+    border-bottom: 1.25px solid var(--dark3);
+    left: 72px;
+    width: calc(100% - 72px);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+
+    z-index: 5;
+}
+
+.tablist-container {
+    display: flex;
+    flex-direction: row;
+    /* gap: 20px; */
+    /* justify-content: center; */
+    margin-left: 75px;
+}
+
+.tablist-button {
+    display: flex;
+    align-items: center;
+    background-color: var(--dark3);
+    padding-inline: 20px;
+    margin: 12px;
+    margin-left: 0;
+    cursor: pointer;
+    border: 1px solid var(--dark4);
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    transition: background-color .5s ease;
+    -webkit-transition: background-color .5s ease;
+    -moz-transition: background-color .5s ease;
+    -ms-transition: background-color .5s ease;
+    -o-transition: background-color .5s ease;
+}
+
+.tablist-button:hover {
+    background-color: var(--dark4);
+    transition: background-color .5s ease;
+    -webkit-transition: background-color .5s ease;
+    -moz-transition: background-color .5s ease;
+    -ms-transition: background-color .5s ease;
+    -o-transition: background-color .5s ease;
+}
+
+.tablist-button-text {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font: var(--body-16regular);
+    font-size: 14px;
+}
+
+.swiper-button-prev {
+    background: linear-gradient(90deg, rgba(33,33,33,1) 60%, rgba(33,33,33,0.75) 70%, rgba(33,33,33,0.5) 80%, rgba(33,33,33,0.25) 90%, rgba(33,33,33,0) 100%);
+}
+.swiper-button-prev::after {
+    margin-right: 45px;
+    color: var(--dark6);
+}
+
+.swiper-button-next {
+    background: linear-gradient(-90deg, rgba(33,33,33,1) 60%, rgba(33,33,33,0.75) 70%, rgba(33,33,33,0.5) 80%, rgba(33,33,33,0.25) 90%, rgba(33,33,33,0) 100%);
+}
+.swiper-button-next::after {
+    margin-left: 45px;
+    color: var(--dark6);
+}
+
+@media only screen and (max-width: 650px) {
+    .tablist {
+        left: 0;
+        width: 100%;
+        transition: all 0s;
+        -webkit-transition: all 0s;
+        -moz-transition: all 0s;
+        -ms-transition: all 0s;
+        -o-transition: all 0s;
+}
+}

@@ -1,0 +1,285 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 56px;
+    gap: 30px;
+    background-color: var(--header-color);
+    border-bottom: 1.25px solid var(--dark3);
+    /* padding-left: 144px; */
+
+    width: 100%;
+
+}
+
+.header-left, .header-center, .header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+/* === header left === */
+.header-left {
+    margin-left: 18px;
+    gap: 18px;
+}
+
+.header-left a {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.sidebar.close .header-left {
+    display: none;
+}
+
+/* === menu buttom === */
+.menu-button-icon {
+    height: 24px;
+    width: 24px;
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: var(--dark1);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.menu-buttom svg {
+    height: 24px;
+    width: 24px;
+}
+
+.menu-button-icon svg path {
+    fill: var(--white);
+}
+/* === menu buttom === */
+
+
+
+/* === logo === */
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    margin: 18px 0px;
+    height: 20px;
+    /* gap: 18px; */
+}
+
+.sidebar.close .image-logo {
+    display: none;
+}
+
+.sidebar.close .youtube-logo {
+    display: none;
+}
+
+.menu-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+/* youtube logo */
+.image-logo {
+    height: 20px;
+    width: 28.57px;
+}
+
+.image-logo svg{
+    height: 20px;
+    width: 28.57px;
+}
+
+.image-logo svg path:nth-child(1) {
+    fill: var(--primary);
+}
+.image-logo svg path:nth-child(2) {
+    fill: var(--white);
+}
+/* youtube logo */
+
+/* youtube logo in letter */
+.youtube-logo {
+    height: 20px;
+    width: 60px;
+}
+.youtube-logo svg {
+    height: 20px;
+    width: 60px;
+}
+
+.youtube-logo svg path {
+    fill: var(--white);
+    transform: translateX(-30.5px);
+    -webkit-transform: translateX(-30.5px);
+    -moz-transform: translateX(-30.5px);
+    -ms-transform: translateX(-30.5px);
+    -o-transform: translateX(-30.5px);
+}
+/* youtube logo in letter */
+/* === logo === */
+
+
+
+/* === header left === */
+
+
+
+/* === header center === */
+.header-center {
+    justify-content: center;
+    /* width: 100%; */
+    width: 728px;
+}
+
+.header-search {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    width: 100%;
+    height: 40px;
+    margin-inline: 48px 8px;
+}
+
+.header-search input {
+    padding-inline: 12px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--dark3);
+    background-color: var(--dark1);
+    color: var(--white);
+    font: var(--body-16regular);
+    border-radius: 2px 0px 0px 2px;
+    -webkit-border-radius: 2px 0px 0px 2px;
+    -moz-border-radius: 2px 0px 0px 2px;
+    -ms-border-radius: 2px 0px 0px 2px;
+    -o-border-radius: 2px 0px 0px 2px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    background-image: url(assets/icons/clear.svg);
+    background-size: contain;
+    cursor: pointer;
+  }
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    padding-inline: 6px;
+    background-color: var(--dark3);
+}
+.search-icon svg {
+    height: 24px;
+    width: 24px;
+}
+.search-icon svg path {
+    fill: var(--white);
+}
+
+.microphone-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: var(--dark1);
+    
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.microphone-icon svg {
+    margin: 8px;
+    height: 24px;
+    width: 24px;
+}
+.microphone-icon svg path {
+    fill: var(--white);
+}
+
+/* === header center === */
+
+
+
+/* === header right === */
+.header-right {
+    margin-right: 24px;
+    gap: 8px;
+}
+
+.header-right-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+.header-right-icons:hover {
+    background-color: var(--dark3);
+}
+.header-right-icons svg {
+    height: 24px;
+    width: 24px;
+}
+.header-right-icons svg path {
+    fill: var(--white);
+}
+
+.header-channel-container {
+    height: 38px;
+}
+
+.header-channel-container .image-container {
+    height: 38px;
+    width: 38px;
+    
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.header-channel-container .image-container img {
+    height: 38px;
+    width: 38px;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* === header right === */
+
+
+@media only screen and (max-width: 700px) {
+    .header-center {
+        display: none;
+    }
+}
