@@ -4,8 +4,7 @@ const body = document.querySelector("body"),
     main = body.querySelector("main"),
     menuButton = body.querySelector(".menu-button-icon"),
     modeSwitch = body.querySelector(".toggle-switch"),
-    modeText = body.querySelector(".mode-text"),
-    opacity = body.querySelector(".body-container");
+    modeText = body.querySelector(".mode-text")
 
     menuButton.addEventListener("click", () => {
         sidebar.classList.toggle("close");
