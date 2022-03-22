@@ -94,5 +94,8 @@
         -moz-transition: .5s;
         -ms-transition: .5s;
         -o-transition: .5s;
-}
+    }
+    .tablist-container {
+        margin-left: 12px;
+    }
 }
