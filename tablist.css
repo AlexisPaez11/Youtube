@@ -4,11 +4,11 @@
     border-bottom: 1.25px solid var(--dark3);
     left: 72px;
     width: calc(100% - 72px);
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
     z-index: 5;
 }
 
@@ -23,7 +23,6 @@
 .tablist-button {
     display: flex;
     align-items: center;
-    background-color: var(--dark3);
     padding-inline: 20px;
     margin: 12px;
     margin-left: 0;
@@ -40,8 +39,17 @@
     -ms-transition: background-color .5s ease;
     -o-transition: background-color .5s ease;
 }
+.tablist-button-text {
+    display: flex;
+    align-items: center;
+    font: var(--body-16regular);
+    font-size: 14px;
+}
 
-.tablist-button:hover {
+.tablist-button.disabled {
+    background-color: var(--dark3);
+}
+.tablist-button.disabled:hover {
     background-color: var(--dark4);
     transition: background-color .5s ease;
     -webkit-transition: background-color .5s ease;
@@ -49,13 +57,15 @@
     -ms-transition: background-color .5s ease;
     -o-transition: background-color .5s ease;
 }
-
-.tablist-button-text {
-    display: flex;
-    align-items: center;
+.tablist-button.disabled .tablist-button-text {
     color: var(--white);
-    font: var(--body-16regular);
-    font-size: 14px;
+}
+
+.tablist-button.active {
+    background-color: var(--white);
+}
+.tablist-button.active .tablist-button-text {
+    color: var(--dark2);
 }
 
 .swiper-button-prev {
