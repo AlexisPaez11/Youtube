@@ -10,24 +10,25 @@ main {
     /* width: calc(100% - 72px); */
     width: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #main::-webkit-scrollbar {
-    inline-size: 12px;
+    inline-size: 24px;
+    -webkit-appearance: none;
 }
 
-#main::-webkit-scrollbar-thumb{
+#main::-webkit-scrollbar-thumb {
     background-color: var(--dark3);
+    border: 8px solid var(--dark1);
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
-    transition: 5s;
-    -webkit-transition: 5s;
-    -moz-transition: 5s;
-    -ms-transition: 5s;
-    -o-transition: 5s;
+}
+#main::-webkit-scrollbar-thumb:active {
+    background-color: var(--dark4);
 }
 
 .header-container {
@@ -35,7 +36,7 @@ main {
     position: fixed;
     top: 0px;
     z-index: 20;
-    width: calc(100% - 20px);
+    width: calc(100% - 24px);
     transition: all 1s;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
@@ -43,7 +44,7 @@ main {
     -o-transition: all 1s;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
 
     .header-container {
         width: 100%;

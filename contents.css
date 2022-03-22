@@ -1,19 +1,17 @@
 .contents {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 28px;
+    row-gap: 24px;
     column-gap: 12px;
     top: 113px;
-    margin-block: 16px 160px;
+    margin-block: 16px 136.5px;
     /* margin-left: 16px; */
     padding-inline: 16px;
-    /* background-color: red; */
-    /* overflow-x: hidden; */
     overflow-y: scroll;
     z-index: 5;
     position: relative;
     left: 72px;
-    width: calc(100% - 112px);
+    width: calc(100% - 102px);
     transition: .25s;
     -webkit-transition: .25s;
     -moz-transition: .25s;
@@ -106,7 +104,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 92px;
+    height: 86px;
 }
 
 .avatar {
@@ -124,6 +122,7 @@
 }
 
 .avatar img {
+    background-color: var(--dark2);
     height: 36px;
     width: 36px;
     
@@ -168,6 +167,13 @@
     font: var(--body-16regular);
     font-size: 12px;
     color: var(--dark4);
+
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
 
 .video-author:hover {
@@ -179,14 +185,29 @@
     flex-direction: row;
 }
 
-.video-view, .video-·, .video-time {
+.video-view {
+    width: auto;
     font: var(--body-16regular);
     font-size: 12px;
     color: var(--dark4);
 }
 
-.video-· {
-    margin-inline: 6px;
+.video-view::after {
+    content: "·";
+    margin-inline: 4px;
+}
+
+.video-time {
+    width: 50%;
+    font: var(--body-16regular);
+    font-size: 12px;
+    color: var(--dark4);
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
 
 .more-button {
@@ -256,15 +277,18 @@
     .contents {
         grid-template-columns: repeat(1, 1fr);
     }
+    .content {
+        padding-inline: 0px;
+    }
     .details {
-        height: 72px;
+        height: 66px;
     }
     .video-title {
         -webkit-line-clamp: 1;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
     .contents {
         left: 0px;
         width: 100%;

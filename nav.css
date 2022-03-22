@@ -290,7 +290,7 @@ body.light .switch::before {
 /* === menu= === */
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
     .sidebar-menu {
         left: 0;
         width: 100%;

@@ -197,7 +197,12 @@
     cursor: pointer;
     height: 54px;
     width: 108px;
-    color: var(--swiper-navigation-color,var(--swiper-theme-color))
+    transition: .5s;
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 .swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled {
