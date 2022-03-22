@@ -112,13 +112,18 @@
     flex-direction: column;
     height: 36px;
     width: 36px;
-    padding: 0 12px 0 0;
+    padding: 0 12px 0 0px;
     
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 .avatar img {
@@ -219,11 +224,11 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    transform: translate(6px, 0px);
-    -webkit-transform: translate(6px, 0px);
-    -moz-transform: translate(6px, 0px);
-    -ms-transform: translate(6px, 0px);
-    -o-transform: translate(6px, 0px);
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
 }
 
 .more-button svg {
@@ -312,6 +317,21 @@
         -moz-border-radius: 0px;
         -ms-border-radius: 0px;
         -o-border-radius: 0px;
+    }
+    .avatar {
+        padding: 0 12px 0 12px;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+}
+    .more-button {
+        transform: translate(-6px, 0px);
+        -webkit-transform: translate(-6px, 0px);
+        -moz-transform: translate(-6px, 0px);
+        -ms-transform: translate(-6px, 0px);
+        -o-transform: translate(-6px, 0px);
     }
 
 }
