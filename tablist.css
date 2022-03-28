@@ -1,14 +1,14 @@
 .tablist {
-    background-color: var(--dark2);
+    background-color: var(--tablist-bg);
     height: 54px;
-    border-bottom: 1.25px solid var(--dark3);
+    border-bottom: 1.25px solid var(--borders);
     left: 72px;
     width: calc(100% - 72px);
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
+    transition: .5s, background-color 0s, border 0s;
+    -webkit-transition: .5s, background-color 0s, border 0s;
+    -moz-transition: .5s, background-color 0s, border 0s;
+    -ms-transition: .5s, background-color 0s, border 0s;
+    -o-transition: .5s, background-color 0s, border 0s;
     z-index: 5;
 }
 
@@ -27,17 +27,12 @@
     margin: 12px;
     margin-left: 0;
     cursor: pointer;
-    border: 1px solid var(--dark4);
+    border: 1px solid var(--borders);
     border-radius: 999px;
     -webkit-border-radius: 999px;
     -moz-border-radius: 999px;
     -ms-border-radius: 999px;
     -o-border-radius: 999px;
-    transition: background-color .5s ease;
-    -webkit-transition: background-color .5s ease;
-    -moz-transition: background-color .5s ease;
-    -ms-transition: background-color .5s ease;
-    -o-transition: background-color .5s ease;
 }
 .tablist-button-text {
     display: flex;
@@ -47,10 +42,10 @@
 }
 
 .tablist-button.disabled {
-    background-color: var(--dark3);
+    background-color: var(--tablist-buttonDisabled);
 }
 .tablist-button.disabled:hover {
-    background-color: var(--dark4);
+    background-color: var(--tablist-buttonDisabled-hover);
     transition: background-color .5s ease;
     -webkit-transition: background-color .5s ease;
     -moz-transition: background-color .5s ease;
@@ -58,30 +53,30 @@
     -o-transition: background-color .5s ease;
 }
 .tablist-button.disabled .tablist-button-text {
-    color: var(--white);
+    color: var(--text-color);
 }
 
 .tablist-button.active {
-    background-color: var(--white);
+    background-color: var(--tablist-buttonActive);
 }
 .tablist-button.active .tablist-button-text {
-    color: var(--dark2);
+    color: var(--tablist-buttonActive-text);
 }
 
 .swiper-button-prev {
-    background: linear-gradient(90deg, rgba(33,33,33,1) 60%, rgba(33,33,33,0.75) 70%, rgba(33,33,33,0.5) 80%, rgba(33,33,33,0.25) 90%, rgba(33,33,33,0) 100%);
+    background: var(--swiper-button-prev-bg);
 }
 .swiper-button-prev::after {
     margin-right: 45px;
-    color: var(--dark6);
+    color: var(--swiper-button);
 }
 
 .swiper-button-next {
-    background: linear-gradient(-90deg, rgba(33,33,33,1) 60%, rgba(33,33,33,0.75) 70%, rgba(33,33,33,0.5) 80%, rgba(33,33,33,0.25) 90%, rgba(33,33,33,0) 100%);
+    background: var(--swiper-button-next-bg);
 }
 .swiper-button-next::after {
     margin-left: 45px;
-    color: var(--dark6);
+    color: var(--swiper-button);
 }
 
 @media only screen and (max-width: 550px) {

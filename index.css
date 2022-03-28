@@ -16,12 +16,50 @@
     --dark8: #F9F9F9;
     --white: #FFFFFF;
 
+    --youtube-logo-inLetter: var(--white);
+    --icons-fill: var(--white);
+    --text-color: var(--white);
+    --borders: var(--dark3);
+
+    --menu-button: var(--dark1);
+    --sidebarMenu-bg: var(--dark2);
+    --channel-imageContainer: var(--dark3);
+    --channel-description-text: var(--dark5);
+    --sidebar-selected: var(--dark1);
+    
     --toggle-switch: var(--dark3);
-    --sidebar-color: var(--dark2);
-    --header-color: var(--dark2);
+    --toggle-switch-before: var(--dark4);
 
+    --header-bg: var(--dark2);
+    --headerSearch-input: var(--dark1);
+    --headerSearch-button: var(--dark3);
+    --header-microphone-button: var(--dark1);
+    --headerRight-icons-hover: var(--dark3);
 
-    --main-color: var(--dark1);
+    --tablist-bg: var(--dark2);
+    --tablist-buttonActive: var(--white);
+    --tablist-buttonActive-text: var(--dark2);
+    --tablist-buttonDisabled: var(--dark3);
+    --tablist-buttonDisabled-hover: var(--dark4);
+    --swiper-button: var(--dark6);
+    --swiper-button-prev-bg: linear-gradient(90deg, rgb(33, 33, 33, 1) 60%, rgba(33, 33, 33, 0.75) 70%, rgba(33, 33, 33, 0.5) 80%, rgba(33, 33, 33, 0.25) 90%, rgba(33, 33, 33, 0) 100%);
+    --swiper-button-next-bg: linear-gradient(-90deg, rgb(33, 33, 33, 1) 60%, rgba(33, 33, 33, 0.75) 70%, rgba(33, 33, 33, 0.5) 80%, rgba(33, 33, 33, 0.25) 90%, rgba(33, 33, 33, 0) 100%);
+    
+    --body-bg: var(--dark1);
+    --content-active: var(--dark2);
+    --video-duration: var(--dark1);
+    --slider: var(--dark2);
+    --slider-progress: red;
+    --avatarContainer: var(--dark2);
+    --video-author-view-time: var(--dark4);
+    --video-author-hover: var(--white);
+    --more-button: var(--white);
+    --more-button-hover: #42424275;
+
+    --main-scrollbar: var(--dark3);
+    --main-scrollbarActive: var(--dark4);
+    --main-scrollbar-border: var(--dark1);
+    
 
     --title-72bold: 700 4.5rem/normal Roboto; 
     --title-32bold: 700 2rem/2.25rem Roboto; 
@@ -32,7 +70,7 @@
     --body-16regular: 400 1rem/1.25rem Roboto; 
     --body-16regular_u: 400 1rem/1.125rem Roboto; 
     --caption-12bold: 700 0.75rem/1rem Roboto;
-    
+
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
@@ -43,25 +81,81 @@
 * {
     padding: 0;
     margin: 0;
+    transition: background-color 0s;
+    -webkit-transition: background-color 0s;
+    -moz-transition: background-color 0s;
+    -ms-transition: background-color 0s;
+    -o-transition: background-color 0s;
 }
 
 body {
     /* display: flex; */
     justify-content: space-between;
     height: 100vh;
-    background-color: var(--dark1);
+    background-color: var(--body-bg);
 }
+
+
+
+
+
+/* LIGHT MODE */
 
 body.light {
+    --youtube-logo-inLetter: var(--dark2);
+    --icons-fill: var(--black);
+    --text-color: var(--black);
+    --borders: var(--dark6);
 
-    --main-color: var(--white);
+    --menu-button: var(--dark6);
+    --sidebarMenu-bg: var(--dark8);
+    --channel-imageContainer: var(--dark6);
+    --channel-description-text: var(--dark4);
+    --sidebar-selected: var(--dark6);
+    --toggle-switch: var(--dark6);
+    --toggle-switch-before: var(--dark5);
+
+    --header-bg: var(--dark8);
+    --headerSearch-input: var(--dark8);
+    --headerSearch-button: var(--dark6);
+    --header-microphone-button: var(--dark6);
+    --headerRight-icons-hover: var(--dark6);
+
+    --tablist-bg: var(--dark8);
+    --tablist-buttonActive: var(--black);
+    --tablist-buttonActive-text: var(--white);
+    --tablist-buttonDisabled: var(--dark6);
+    --tablist-buttonDisabled-hover: var(--dark5);
+    --swiper-button: var(--black);
+    --swiper-button-prev-bg: linear-gradient(90deg, rgb(249, 249, 249, 1) 60%, rgba(249, 249, 249, 0.75) 70%, rgba(249, 249, 249, 0.5) 80%, rgba(249, 249, 249, 0.25) 90%, rgba(249, 249, 249, 0) 100%);
+    --swiper-button-next-bg: linear-gradient(-90deg, rgb(249, 249, 249, 1) 60%, rgba(249, 249, 249, 0.75) 70%, rgba(249, 249, 249, 0.5) 80%, rgba(249, 249, 249, 0.25) 90%, rgba(249, 249, 249, 0) 100%);
+    
+    --body-bg: var(--dark6);
+    --content-active: var(--dark8);
+    --video-duration: var(--dark1);
+    --slider: var(--dark8);
+    --slider-progress: red;
+    --avatarContainer: var(--dark4);
+    --video-author-view-time: var(--dark4);
+    --video-author-hover: var(--dark1);
+    --more-button: var(--dark1);
+    --more-button-hover: #90909075;
+
+    --main-scrollbar: var(--dark4);
+    --main-scrollbarActive: var(--dark3);
+    --main-scrollbar-border: var(--dark6);
+    -webkit-transition: 0s;
+    -moz-transition: 0s;
+    -ms-transition: 0s;
+    -o-transition: 0s;
 }
 
-/* TODO: HACER EL LIGHT MODE */
+/* LIGHT MODE */
 
-body.light {
-    background-color: var(--dark6);
-}
+
+
+
+
 
 .body-container {
     position: fixed;

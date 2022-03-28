@@ -4,8 +4,8 @@ header {
     justify-content: space-between;
     height: 56px;
     gap: 30px;
-    background-color: var(--header-color);
-    border-bottom: 1.25px solid var(--dark3);
+    background-color: var(--header-bg);
+    border-bottom: 1.25px solid var(--borders);
 
     width: 100%;
 }
@@ -34,29 +34,29 @@ header {
     display: none;
 }
 
-/* === menu buttom === */
+/* === menu button === */
 .menu-button-icon {
     height: 24px;
     width: 24px;
     padding: 6px;
     border-radius: 6px;
     cursor: pointer;
-    background-color: var(--dark1);
+    background-color: var(--menu-button);
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
 }
 
-.menu-buttom svg {
+.menu-button svg {
     height: 24px;
     width: 24px;
 }
 
 .menu-button-icon svg path {
-    fill: var(--white);
+    fill: var(--icons-fill);
 }
-/* === menu buttom === */
+/* === menu button === */
 
 
 
@@ -100,7 +100,7 @@ header {
     fill: var(--primary);
 }
 .image-logo svg path:nth-child(2) {
-    fill: var(--white);
+    fill: #fff;
 }
 /* youtube logo */
 
@@ -115,7 +115,7 @@ header {
 }
 
 .youtube-logo svg path {
-    fill: var(--white);
+    fill: var(--youtube-logo-inLetter);
     transform: translateX(-30.5px);
     -webkit-transform: translateX(-30.5px);
     -moz-transform: translateX(-30.5px);
@@ -152,9 +152,9 @@ header {
     height: 100%;
     width: 100%;
     outline: none;
-    border: 1px solid var(--dark3);
-    background-color: var(--dark1);
-    color: var(--white);
+    border: 1px solid var(--borders);
+    background-color: var(--headerSearch-input);
+    color: var(--text-color);
     font: var(--body-16regular);
     border-radius: 2px 0px 0px 2px;
     -webkit-border-radius: 2px 0px 0px 2px;
@@ -179,14 +179,14 @@ input[type="search"]::-webkit-search-cancel-button {
     height: 40px;
     width: 40px;
     padding-inline: 6px;
-    background-color: var(--dark3);
+    background-color: var(--headerSearch-button);
 }
 .search-icon svg {
     height: 24px;
     width: 24px;
 }
 .search-icon svg path {
-    fill: var(--white);
+    fill: var(--icons-fill);
 }
 
 .microphone-icon {
@@ -195,7 +195,7 @@ input[type="search"]::-webkit-search-cancel-button {
     align-items: center;
     height: 40px;
     width: 40px;
-    background-color: var(--dark1);
+    background-color: var(--header-microphone-button);
     
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -209,7 +209,7 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 24px;
 }
 .microphone-icon svg path {
-    fill: var(--white);
+    fill: var(--icons-fill);
 }
 
 /* === header center === */
@@ -237,14 +237,14 @@ input[type="search"]::-webkit-search-cancel-button {
     cursor: pointer;
 }
 .header-right-icons:hover {
-    background-color: var(--dark3);
+    background-color: var(--headerRight-icons-hover);
 }
 .header-right-icons svg {
     height: 24px;
     width: 24px;
 }
 .header-right-icons svg path {
-    fill: var(--white);
+    fill: var(--icons-fill);
 }
 
 .header-channel-container {
@@ -285,5 +285,5 @@ input[type="search"]::-webkit-search-cancel-button {
 @media only screen and (max-width: 500px) {
     header {
         border-bottom: 1.25px solid transparent;
-    }
+}
 }

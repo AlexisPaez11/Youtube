@@ -19,8 +19,8 @@ main {
 }
 
 #main::-webkit-scrollbar-thumb {
-    background-color: var(--dark3);
-    border: 8px solid var(--dark1);
+    background-color: var(--main-scrollbar);
+    border: 8px solid var(--main-scrollbar-border);
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -28,7 +28,7 @@ main {
     -o-border-radius: 12px;
 }
 #main::-webkit-scrollbar-thumb:active {
-    background-color: var(--dark4);
+    background-color: var(--main-scrollbarActive);
 }
 
 .header-container {

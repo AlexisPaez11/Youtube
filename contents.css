@@ -21,9 +21,7 @@
 
 .content {
     width: 1fr;
-    /*height: 1fr;
-    *//*background-color: var(--dark2);
-    */cursor: pointer;
+    cursor: pointer;
     padding: 4px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -35,7 +33,7 @@
     transition-duration: .5s;
 }
 .content:active {
-    background-color: var(--dark2);
+    background-color: var(--content-active);
     transition-duration: 0s;
 }
 
@@ -60,7 +58,7 @@
     position: absolute;
     bottom: 8px;
     right: 4px;
-    background-color: var(--dark1);
+    background-color: var(--video-duration);
     opacity: 90%;
     /* margin: 0px 8px 10px 0px; */
     padding-inline: 4px;
@@ -78,7 +76,7 @@
 }
 
 .slider {
-    background-color: var(--dark2);
+    background-color: var(--slider);
     position: absolute;
     bottom: 0;
     height: 4px;
@@ -86,7 +84,7 @@
 }
 
 .slider-progress {
-    background-color: red;
+    background-color: var(--slider-progress);
     width: 100%;
     height: 100%;
 }
@@ -127,7 +125,7 @@
 }
 
 .avatar img {
-    background-color: var(--dark2);
+    background-color: var(--avatarContainer);
     height: 36px;
     width: 36px;
     
@@ -152,7 +150,7 @@
     width: 100%;
     font: var(--body-16regular);
     font-size: 14px;
-    color: var(--white);
+    color: var(--text-color);
     overflow: hidden;
 
     
@@ -171,7 +169,7 @@
 .video-author {
     font: var(--body-16regular);
     font-size: 12px;
-    color: var(--dark4);
+    color: var(--video-author-view-time);
 
     overflow: hidden;
     white-space: normal;
@@ -182,7 +180,7 @@
 }
 
 .video-author:hover {
-    color: var(--white);
+    color: var(--video-author-hover);
 }
 
 .videos-details-bottom-container {
@@ -194,7 +192,7 @@
     width: auto;
     font: var(--body-16regular);
     font-size: 12px;
-    color: var(--dark4);
+    color: var(--video-author-view-time);
 }
 
 .video-view::after {
@@ -206,7 +204,7 @@
     width: 50%;
     font: var(--body-16regular);
     font-size: 12px;
-    color: var(--dark4);
+    color: var(--video-author-view-time);
     overflow: hidden;
     white-space: normal;
     text-overflow: ellipsis;
@@ -248,7 +246,7 @@
 }
 
 .more-button:hover {
-    background-color: #42424275;
+    background-color: var(--more-button-hover);
     transition: .25s;
     -webkit-transition: .25s;
     -moz-transition: .25s;
@@ -257,7 +255,7 @@
 }
 
 .more-button svg path {
-    fill: var(--white);
+    fill: var(--more-button);
 }
 
 
